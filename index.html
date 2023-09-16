@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Task List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="para">
+        <h4>Simple Task List</h4>
+        <p>All functionality is added to this task list including task Adding, Filtering, Deleting single items, and Finally clearing the entire task list.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="six columns col1">
+                <h4>Please Add Task:</h4>
+                <form id="task_form">
+                    <input type="text" id="add_task" placeholder="Enter the task">
+                    <input type="submit" id="hello" value="ADD Task">
+                </form>
+            </div>
+
+            <div class="six columns col1">
+                <h4>Show All Task:</h4>
+                <input type="text" id="filter_task" placeholder="Filter Task">
+                <ol id="tasks" class="tasks">
+
+                </ol>
+                <button id="clear_task_btn">Clear Task</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
